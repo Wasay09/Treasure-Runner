@@ -1,0 +1,11 @@
+{
+	"name": "Treasure Runner Dev",
+	"build": { "dockerfile": "Dockerfile" },
+	"workspaceFolder": "/workspace",
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+	],
+	"overrideCommand": true,
+	"remoteUser": "root",
+	"forwardPorts": [3000, 8000]
+}
